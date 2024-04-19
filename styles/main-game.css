@@ -1,0 +1,156 @@
+.game-section {
+  margin-top: 20px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.off-game-section {
+  display: none;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.play-button-section {
+  margin: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.play-button {
+  background-color: white;
+  width: 180px;
+  height: 180px;
+  border: 20px solid #7B8CD7;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.play-icon{
+  width: 50px;
+  filter: brightness(70%);
+  height: 50px;
+}
+
+.reset-score-button,
+.auto-play-button {
+  border: 1px solid #606E85;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: Playpen Sans;
+  cursor: pointer;
+}
+
+.reset-score-button:hover ,
+.auto-play-button:hover {
+  background-color: white;
+  color: #1b2748;
+}
+
+.auto-playing-style {
+  background-color: white;
+  color: #1b2748;
+}
+
+
+.pick-paragraph {
+  margin-top: 10px;
+  color: #7B8CD7;
+  font-family: Playpen Sans;
+}
+
+.last-buttons {
+  position: fixed;
+  bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+
+}
+
+/* ------------Game Result Section---------------- */
+.game-result {
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+}
+
+
+.ripple-1,
+.ripple-2,
+.ripple-3{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+}
+
+.ripple-2 {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.ripple-1 {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.ripple-3 {
+  position: relative;
+}
+
+.ripple-3 p {
+  position: absolute;
+  top: -15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.off-ripple {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.player-button,
+.computer-button {
+  margin: 0px;
+}
+
+.player-button {
+  border-color: rgb(233, 164, 35);
+}
+
+.computer-button {
+  border-color: rgb(71, 71, 239);
+}
+
+.result {
+  font-size: 35px;
+  margin: 0px 15px;
+  white-space: nowrap;
+}
+
+.play-again-button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.play-again-button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #606E85;
+}
+/* -----------------End Game Result Section ------------------- */

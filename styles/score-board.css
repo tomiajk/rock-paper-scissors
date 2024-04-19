@@ -1,0 +1,45 @@
+.score-board {
+  margin-top: 15px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #606E85;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  padding: 7px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.rps {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  font-family: Rubik Doodle Shadow;
+}
+
+
+.player-score,
+.computer-score {
+  width: 120px;
+  height: 80px;
+  background-color: white;
+  color: #7B8CD7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: Neuton;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.score {
+  font-size: 40px;
+  font-weight: 800;
+  color: black;
+}
+

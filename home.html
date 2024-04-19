@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Jacquard+24&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playpen+Sans:wght@100..800&family=Rubik+Doodle+Shadow&family=Rubik+Glitch+Pop&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Jacquard+24&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Jacquard+24&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Rubik+Doodle+Shadow&family=Rubik+Glitch+Pop&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/score-board.css">
+  <link rel="stylesheet" href="styles/main-game.css">
+  <link rel="stylesheet" href="styles/general.css">
+</head>
+<body>
+  <!-- ---------------------- Score Board -------------- -->
+  <div class="score-board">
+    <div class="rps">
+      <p>ROCK</p>
+      <p>PAPER</p>
+      <p>SCISSORS</p>
+    </div>
+    <div class="player-score">
+      <p>PLAYER</p>
+      <p class="score js-player-score">0</p>
+    </div>
+    <div class="computer-score">
+      <p>COMPUTER</p>
+      <p class="score js-computer-score">0</p>
+    </div>
+  </div>
+    <!-- ------------ Score Board Ends------------------ -->
+
+    <!-- ---------------------Game Section ------------------------- -->
+    <section class="game-section js-game-section">
+      <p class="heading">PLAY AGAINST COMPUTER</p>
+      <p class="pick-paragraph">Pick a move</p>
+      <div class="play-button-section">
+        <button class="play-button js-rock-button">
+          <img src="images/Rock-emoji.png" title="Rock-emoji" class="play-icon rock">
+        </button> 
+  
+        <button class="play-button js-paper-button">
+          <img src="images/Paper-emoji.png" title="Paper-emoji" class="play-icon paper">
+        </button>
+      
+        <button class="play-button js-scissors-button">
+          <img src="images/Scissors-emoji.png" title="Scissors-emoji" class="play-icon scissors">
+        </button>
+      </div>
+    </section>
+    <!-- -------------Game Section Ends-------------------- -->
+
+    <!-- --------------------Result After Picking Section ---------------- -->
+    <section id="result-section" class="game-result js-game-result-section">
+
+      <div class="js-player-choice">
+        
+      </div>
+
+      <div class="result">
+        <p class="js-result-text"></p>
+        <button class="play-again-button">PLAY AGAIN</button>
+      </div>
+
+      <div class="js-computer-choice">
+        
+      </div>
+
+    </section>
+    <!-- --------------------Result After Picking Section  End---------------- -->
+
+    <div class="last-buttons">
+      <button class = "reset-score-button js-reset-score-button">Reset Score</button>
+
+      <button class="auto-play-button js-auto-play-button">Auto Play</button>
+    </div>
+
+    <script src="scripts/change-script.js"></script>
+    <script src="scripts/rps-game.js"></script>
+</body>
+</html>
